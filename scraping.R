@@ -5,6 +5,8 @@ library(purrr)
 library(tidyr)
 
 # extracting components from WHOCC ATC/DDD website ####
+
+# the website was scraped on July 17, 2018
 whocc_j01_url <- 'https://www.whocc.no/atc_ddd_index/?code=J01'
 
 sub_urls <- read_html(x = whocc_j01_url) %>% 
